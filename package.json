@@ -1,0 +1,21 @@
+{
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "description": "Simple Node.js TypeScript setup with nodemon",
+  "main": "dist/scripts/index.js",
+"scripts": {
+  "start": "node dist/scripts/index.js",
+  "dev": "nodemon --watch src --ext ts,json --exec ts-node ./src/scripts/index.ts",
+  "build": "tsc",
+  "watch": "tsc -w"
+},
+  "keywords": [],
+  "author": "Ariel Izraelov",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
